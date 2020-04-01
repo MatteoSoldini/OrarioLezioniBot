@@ -155,8 +155,6 @@ def json_to_image(data):
     for i in range(0, d_duration + 1):
         shape = [(i * d_spacing + D_SPACING['left'], D_SPACING['top']), (i * d_spacing + D_SPACING['left'], Y - D_SPACING['bottom'])]
         d.line(shape, fill =(30, 30, 30), width = LINE_WIDTH)
-    for i in r:
-        print(WEEK_DAY[i.weekday()])
 
     #Draw events
     font = ImageFont.truetype("fonts/Lato-Bold.ttf", 20)
